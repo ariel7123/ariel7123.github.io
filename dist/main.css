@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  letter-spacing: 0.02rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fontBolder {
+  font-weight: 600;
+}
+
+header {
+  width: 100%;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  position: sticky;
+}
+.navBar .flexNavCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 80%;
+  padding: 5px;
+}
+.navBar .flexNavCon .ulFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 0.8rem;
+  padding-left: 40px;
+}
+.navBar .flexNavCon .ulFlex li {
+  padding: 0 20px;
+}
+.navBar .flexNavCon .ulFlex a:hover {
+  color: rgb(75, 142, 241);
+}
+.navBar .flexNavCon .ulFlex .singInBtn {
+  margin: 0 0 0 15px;
+  background: rgb(60, 73, 159);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(60, 73, 159)), to(rgb(43, 218, 255)));
+  background: linear-gradient(90deg, rgb(60, 73, 159) 0%, rgb(43, 218, 255) 100%);
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+.navBar .flexNavCon .ulFlex .singInBtn a {
+  color: rgb(245, 251, 255);
+}
+.navBar .flexNavCon .ulFlex .singInBtn .btnNavImg {
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
+}
+
+.fakeBorder {
+  border: 0.5px hsl(0, 0%, 83%) solid;
+}
+
+main a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+main i {
+  padding-left: 3px;
+  color: hsl(0, 0%, 100%);
+}
+main .flexerMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .flexerMain .descriptionSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+}
+main .flexerMain .descriptionSide .descriptionWords h2 {
+  position: relative;
+  font-weight: 700;
+  line-height: 70px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: hsl(214, 9%, 15%);
+}
+main .flexerMain .descriptionSide .descriptionWords p {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 45px;
+  color: #2A2A2A;
+}
+main .flexerMain .descriptionSide .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .flexerMain .descriptionSide .btns .anchorMainPattern {
+  background-color: hsl(220, 77%, 64%);
+  padding: 11px 20px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-right: 15px;
+}
+main .phoneImg {
+  min-width: 50%;
+}
+main .phoneImg img {
+  max-width: 610px;
+}
+main .main-banner {
+  padding: 150px 120px;
+}
+main .main-banner::after {
+  content: "";
+  background-image: url(../img/slider-left-dec.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 122vh;
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation: fadeIn 2s forwards;
+          animation: fadeIn 2s forwards;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
