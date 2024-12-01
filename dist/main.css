@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 16px;
 }
 
 html {
@@ -27,10 +28,6 @@ a {
   font-weight: 600;
 }
 
-header {
-  width: 100%;
-}
-
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +42,7 @@ header {
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 0.01rem solid hsl(0, 0%, 83%);
   position: fixed;
+  top: -100px;
   width: 100%;
   z-index: 1;
 }
@@ -272,13 +270,12 @@ main .main-banner::after {
   content: "";
   background-image: url(../img/slider-left-dec.png);
   background-repeat: no-repeat;
-  background-size: 43%;
+  background-size: 53%;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 1232vh;
-  padding-right: 500px;
+  height: 122vh;
   z-index: -1;
   opacity: 0;
   -webkit-animation: fadeIn 1.5s 0.6s forwards;
@@ -299,4 +296,155 @@ main .main-banner::after {
   to {
     opacity: 1;
   }
+}
+
+section .contentServices {
+  margin: 5rem;
+  margin-top: 8.3rem;
+}
+section .contentServices .servicesHeader {
+  text-align: center;
+  margin: 10px 500px;
+  height: 12vw;
+  max-width: 850px;
+}
+section .contentServices .servicesHeader .titleServices {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+section .contentServices .servicesHeader .titleServices em {
+  font-style: normal;
+  color: #4b8ef1;
+  font-size: 28.8px;
+}
+section .contentServices .servicesHeader p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #AFAFAF;
+  margin-top: 10px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+section .contentServices .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 180px;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section .contentServices .row .col1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 23%;
+}
+section .contentServices .row .col1 .service-item {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  border-top-right-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 16rem;
+  height: 16.5rem;
+  cursor: pointer;
+}
+section .contentServices .row .col1 .service-item:hover {
+  background-image: url(../img/service-bg.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section .contentServices .row .col1 .service-item .icon {
+  margin-left: 0px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+section .contentServices .row .col1 .service-item h4 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+section .contentServices .row .col1 .service-item p {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #afafaf;
+  max-height: 90px;
+}
+section .contentServices .row .col1 .service-item a {
+  font-size: 15px;
+  color: #0d6efd;
+}
+section .contentServices .row .col1 .service-item:hover h4, section .contentServices .row .col1 .service-item:hover p, section .contentServices .row .col1 .service-item:hover a {
+  color: #fff;
+}
+section .contentServices .row .col1 .first-item .icon {
+  background-image: url(../img/service-icon-01.png);
+}
+section .contentServices .row .col1 .first-item:hover .icon {
+  background-image: url(../img/service-icon-hover-01.png);
+}
+section .contentServices .row .col1 .seconed-item .icon {
+  background-image: url(../img/service-icon-02.png);
+}
+section .contentServices .row .col1 .seconed-item:hover .icon {
+  background-image: url(../img/service-icon-hover-02.png);
+}
+section .contentServices .row .col1 .third-item .icon {
+  background-image: url(../img/service-icon-03.png);
+}
+section .contentServices .row .col1 .third-item:hover .icon {
+  background-image: url(../img/service-icon-hover-03.png);
+}
+section .contentServices .row .col1 .forth-item .icon {
+  background-image: url(../img/service-icon-04.png);
+}
+section .contentServices .row .col1 .forth-item:hover .icon {
+  background-image: url(../img/service-icon-hover-04.png);
+}
+section .contentServices::before {
+  content: "";
+  background-image: url(../img/services-right-dec.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 105%;
+  width: 1136px;
+  height: 250px;
+  z-index: -1;
+}
+section .contentServices::after {
+  content: "";
+  background-image: url(../img/services-left-dec.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -112.5%;
+  width: 261px;
+  height: 368px;
+  z-index: 0;
 }
