@@ -14,6 +14,12 @@ body {
   font-family: "roboto", sans-serif;
   letter-spacing: 0.02rem;
   color: #2a2a2a;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 li {
@@ -26,6 +32,13 @@ a {
 
 .fontBolder {
   font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #afafaf;
 }
 
 .navBar {
@@ -44,7 +57,7 @@ a {
   position: fixed;
   top: -100px;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 @-webkit-keyframes slideDown {
   from {
@@ -97,6 +110,8 @@ a {
 }
 .navBar .flexNavCon .ulFlex a:hover {
   color: rgb(75, 142, 241);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .navBar .flexNavCon .ulFlex .signInBtn {
   margin: 0 0 0 15px;
@@ -268,7 +283,7 @@ main .main-banner .contMainBanner {
 }
 main .main-banner::after {
   content: "";
-  background-image: url(../img/slider-left-dec.png);
+  background-image: url(../img/slider-left-dec-fff.png);
   background-repeat: no-repeat;
   background-size: 53%;
   position: absolute;
@@ -298,28 +313,32 @@ main .main-banner::after {
   }
 }
 
-section .contentServices {
+.services .contentServices {
   margin: 5rem;
   margin-top: 8.3rem;
 }
-section .contentServices .servicesHeader {
+.services .contentServices .servicesHeader {
   text-align: center;
   margin: 10px 500px;
   height: 12vw;
   max-width: 850px;
 }
-section .contentServices .servicesHeader .titleServices {
+.services .contentServices .servicesHeader .titleServices {
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
-section .contentServices .servicesHeader .titleServices em {
+.services .contentServices .servicesHeader .titleServices em {
   font-style: normal;
   color: #4b8ef1;
   font-size: 28.8px;
 }
-section .contentServices .servicesHeader p {
+.services .contentServices .servicesHeader img {
+  display: inline;
+  width: auto;
+}
+.services .contentServices .servicesHeader p {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -328,7 +347,7 @@ section .contentServices .servicesHeader p {
   margin-left: 7%;
   margin-right: 7%;
 }
-section .contentServices .row {
+.services .contentServices .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: -webkit-box;
@@ -341,14 +360,17 @@ section .contentServices .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: 1;
 }
-section .contentServices .row .col1 {
+.services .contentServices .row .col1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: 23%;
+  z-index: -1;
 }
-section .contentServices .row .col1 .service-item {
+.services .contentServices .row .col1 .service-item {
   position: relative;
   z-index: 1;
   padding: 30px;
@@ -363,13 +385,13 @@ section .contentServices .row .col1 .service-item {
   height: 16.5rem;
   cursor: pointer;
 }
-section .contentServices .row .col1 .service-item:hover {
+.services .contentServices .row .col1 .service-item:hover {
   background-image: url(../img/service-bg.jpg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section .contentServices .row .col1 .service-item .icon {
+.services .contentServices .row .col1 .service-item .icon {
   margin-left: 0px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
@@ -378,14 +400,14 @@ section .contentServices .row .col1 .service-item .icon {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-section .contentServices .row .col1 .service-item h4 {
+.services .contentServices .row .col1 .service-item h4 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
 }
-section .contentServices .row .col1 .service-item p {
+.services .contentServices .row .col1 .service-item p {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 15px;
@@ -395,38 +417,38 @@ section .contentServices .row .col1 .service-item p {
   color: #afafaf;
   max-height: 90px;
 }
-section .contentServices .row .col1 .service-item a {
+.services .contentServices .row .col1 .service-item a {
   font-size: 15px;
   color: #0d6efd;
 }
-section .contentServices .row .col1 .service-item:hover h4, section .contentServices .row .col1 .service-item:hover p, section .contentServices .row .col1 .service-item:hover a {
+.services .contentServices .row .col1 .service-item:hover h4, .services .contentServices .row .col1 .service-item:hover p, .services .contentServices .row .col1 .service-item:hover a {
   color: #fff;
 }
-section .contentServices .row .col1 .first-item .icon {
+.services .contentServices .row .col1 .first-item .icon {
   background-image: url(../img/service-icon-01.png);
 }
-section .contentServices .row .col1 .first-item:hover .icon {
+.services .contentServices .row .col1 .first-item:hover .icon {
   background-image: url(../img/service-icon-hover-01.png);
 }
-section .contentServices .row .col1 .seconed-item .icon {
+.services .contentServices .row .col1 .seconed-item .icon {
   background-image: url(../img/service-icon-02.png);
 }
-section .contentServices .row .col1 .seconed-item:hover .icon {
+.services .contentServices .row .col1 .seconed-item:hover .icon {
   background-image: url(../img/service-icon-hover-02.png);
 }
-section .contentServices .row .col1 .third-item .icon {
+.services .contentServices .row .col1 .third-item .icon {
   background-image: url(../img/service-icon-03.png);
 }
-section .contentServices .row .col1 .third-item:hover .icon {
+.services .contentServices .row .col1 .third-item:hover .icon {
   background-image: url(../img/service-icon-hover-03.png);
 }
-section .contentServices .row .col1 .forth-item .icon {
+.services .contentServices .row .col1 .forth-item .icon {
   background-image: url(../img/service-icon-04.png);
 }
-section .contentServices .row .col1 .forth-item:hover .icon {
+.services .contentServices .row .col1 .forth-item:hover .icon {
   background-image: url(../img/service-icon-hover-04.png);
 }
-section .contentServices::before {
+.services .contentServices::before {
   content: "";
   background-image: url(../img/services-right-dec.png);
   background-repeat: no-repeat;
@@ -437,7 +459,7 @@ section .contentServices::before {
   height: 250px;
   z-index: -1;
 }
-section .contentServices::after {
+.services .contentServices::after {
   content: "";
   background-image: url(../img/services-left-dec.png);
   background-repeat: no-repeat;
@@ -446,5 +468,122 @@ section .contentServices::after {
   bottom: -112.5%;
   width: 261px;
   height: 368px;
-  z-index: 0;
+  z-index: -10;
+}
+
+.About .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.About .col-lg-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+  padding: 0 12px;
+}
+.About .col-lg-6 .box-item {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+  padding: 10px 30px;
+  background-color: #f0eded;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.About .col-lg-6 .box-item h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.About .col-lg-6 .box-item a {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: #2a2a2a;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.About .col-lg-6 .box-item a:hover {
+  color: hsl(216, 86%, 62%);
+}
+.About .align-self-center {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.About .col-lg-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+}
+.About .col-lg-12 .gradient-button {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.About .col-lg-12 .gradient-button a {
+  display: inline-block;
+  padding: 12px 22px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15px;
+  background: rgb(19, 175, 240);
+  background: linear-gradient(105deg, rgb(91, 104, 235) 0%, rgb(40, 225, 253) 100%);
+  border-radius: 23px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.About .col-lg-12 span {
+  font-size: 14px;
+  color: #7a7a7a;
+}
+.About .aboutContFlexer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 7rem auto;
+  max-width: 69%;
+}
+.About .aboutContFlexer .col-lg-6 .headerWithDescripoton h4, .About .aboutContFlexer .align-self-center .headerWithDescripoton h4 {
+  color: #2a2a2a;
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+}
+.About .aboutContFlexer .col-lg-6 .headerWithDescripoton h4 em, .About .aboutContFlexer .align-self-center .headerWithDescripoton h4 em {
+  font-style: normal;
+  color: #4b8ef1;
+  font-size: 30px;
+}
+.About .aboutContFlexer .col-lg-6 .headerWithDescripoton img, .About .aboutContFlexer .align-self-center .headerWithDescripoton img {
+  width: 45px;
+  height: 2px;
+  position: relative;
+}
+.About .aboutContFlexer .col-lg-6 .headerWithDescripoton p, .About .aboutContFlexer .align-self-center .headerWithDescripoton p {
+  padding: 10px 0 0;
+  margin-bottom: 45px;
+}
+.About .aboutContFlexer .col-lg-6 .rightImg img, .About .aboutContFlexer .align-self-center .rightImg img {
+  width: 632.2px;
+  height: 789.44px;
+}
+.About::after {
+  background-image: url("../img/about-bg.jpg");
+  width: 777px;
+  height: 350vh;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0%;
+  top: 342.5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -10;
 }
