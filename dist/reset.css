@@ -1,0 +1,59 @@
+:root {
+  --text_color_main: #000000;
+  --text_color_secondary: #a2aab3;
+  --background_color_basic: #FAFAFF;
+  --color-secondary: #545454;
+  --defauld-font-size: 16px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+html {
+  background-color: var(--background_color_basic);
+  font-size: var(--defauld-font-size);
+  font-family: "Roboto Slab";
+  color: var(--text_color_main);
+}
+
+body, main {
+  background-color: var(--background_color);
+}
+
+h2 {
+  text-align: center;
+  color: var(--text_color_main);
+  font-size: 4rem;
+}
+
+h3 {
+  text-align: center;
+  color: var(--text_color_main);
+  font-size: 2rem;
+}
+
+a {
+  color: var(--text_color_main);
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: var(--text_color_secondary);
+}
+
+ul, ol, menu {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--background_color_basic);
+}

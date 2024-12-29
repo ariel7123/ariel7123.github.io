@@ -1,0 +1,82 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.nav {
+  grid-area: 1/1/7/2;
+}
+
+.header {
+  grid-area: 1/2/2/6;
+}
+
+.main {
+  grid-area: 2/2/7/6;
+}
+
+.main2 {
+  grid-area: 3/2/7/8;
+}
+
+.ul-flex-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ul-flex-nav .int-logo {
+  width: 4rem;
+}
+.ul-flex-nav .margin-icons-down {
+  margin-top: 4rem;
+}
+
+.flex11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.flex12 .arrow-down {
+  width: 2rem;
+  height: 2rem;
+}
+.flex12 .margin-for-center {
+  margin-right: 30rem;
+}
+
+.grid-times {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.child {
+  grid-area: 1/1/7/7;
+}
+
+.child {
+  border: 2px black solid;
+}
